@@ -1,0 +1,11 @@
+node_modules
+Dockerfile*
+docker-compose*
+.dockerignore
+.git*
+*.md
+test
+.idea
+*.yml
+Jenkinsfile
+.env-default

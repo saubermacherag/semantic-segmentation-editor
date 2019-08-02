@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+/.idea
+/node_modules
+/build
+
+.env
+
+/.docker/input_img/*
+/.docker/labelimages/*
+/.docker/mongo_data/*
+/.docker/output_img/*

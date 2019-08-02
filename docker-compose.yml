@@ -1,0 +1,35 @@
+version: '3.2'
+services:
+  labeltool-db:
+    container_name: "labeltool-db"
+    image: mongo:4.0.4-xenial
+    restart: always
+    environment:
+      - MONGO_INITDB_DATABASE=labeltool-local
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=whyN0C4sh
+    networks:
+      - labeltool-network
+    volumes:
+      - mongodata/:/data/db
+    ports:
+      - "27017:27017"
+  labeltool:
+    build:
+      context: .
+    restart: always
+    volumes:
+      - ./.docker/input_img:/home/node/app/input_img/
+      - ./.docker/output_img:/home/node/app/output_img/
+      - ./.docker/labelimages:/labelimages/
+    ports:
+      - "3000:3000"
+    networks:
+      - labeltool-network
+    env_file:
+      - .env
+networks:
+  labeltool-network:
+    driver: bridge
+volumes:
+  mongodata:
