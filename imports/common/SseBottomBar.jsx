@@ -70,6 +70,7 @@ class SseBottomBar extends React.Component {
             <div className={this.props.className}
                  style={{
                      "backgroundColor": "#393536",
+                     "backgroundColorSM": "#F00000",
                      "padding": "5px",
                      "borderBottom": "solid 1px #343434"
                  }}>
