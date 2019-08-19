@@ -7,6 +7,8 @@ export default class SseSnackbar extends React.Component {
                 <span>Semantic</span>
                 <span>Segmentation</span>
                 <span>Editor</span>
+                <span><font color="red">Saubermacher</font></span>
+                <span>Edition</span>
             </div>
         </div>)
     }

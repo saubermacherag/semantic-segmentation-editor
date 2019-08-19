@@ -172,7 +172,8 @@ export default class SseClassChooser extends SseToolbar {
         return (
 
             <div className="sse-class-chooser vflex scroller"
-                 style={{"backgroundColor": "#393536", "padding": "5px 5px 0 0"}}>
+                 style={{"backgroundColor": "#393536", "backgroundColorSM": "#F00000", "padding": "5px 5px 0 0"}}>
+
                 {this.state.soc.descriptors.map((objDesc, idx) => {
                     const isSelected = objDesc.classIndex == this.state.activeClassIndex;
                     return <div className="hflex flex-align-items-center no-shrink" key={objDesc.label}>
@@ -190,7 +191,8 @@ export default class SseClassChooser extends SseToolbar {
                                         "margin": "1px",
                                         "backgroundColor": objDesc.color,
                                         "color": SseGlobals.computeTextColor(objDesc.color),
-                                        "border": isSelected ? "solid 1px #E53935" : "solid 1px black",
+                                        "border_old": isSelected ? "solid 1px #E53935" : "solid 1px black",
+                                        "border": isSelected ? "solid 1px #F00000" : "solid 1px black",
                                         "padding": "0 3px"
                                     }}>
                             <div

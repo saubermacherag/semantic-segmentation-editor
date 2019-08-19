@@ -111,7 +111,7 @@ Meteor.methods({
             return {error: leaf + " is a file but should be a folder. Check the documentation and your settings.json"};
         }
         if (!existing) {
-            return {error: leaf + " does not exists. Check the documentation and your settings.json"};
+            return {error: folder + " does not exist. Check the documentation and your settings."};
         }
 
         const dirs = getDirectories(leaf);

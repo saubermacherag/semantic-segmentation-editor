@@ -20,7 +20,7 @@ class SseNavigatorMenu extends React.Component {
     handleClose = event => {
         switch (event.target.textContent){
             case this.labels[0]: this.props.history.push("/"); break;
-            case this.labels[1]: this.props.history.push("/annotated"); break;
+            case this.labels[1]: this.props.history.push("/annotated_sm"); break;
         }
         this.setState({ anchorEl: null });
     };

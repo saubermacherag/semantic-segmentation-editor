@@ -25,7 +25,9 @@ export default class SseNavigatorToolbar extends React.Component {
         {
             let bd = du.pathname.replace(/\/browse\/.*\/.*\//, "").split("%2F");
 
-            let res = [{name: "Home", browseUrl: "/browse/0/20/"}];
+            //let res = [{name: "Home", browseUrl: "/browse/0/20/"}];
+            let res = [];
+
             let data;
 
             bd.forEach(itm => {
@@ -70,9 +72,8 @@ export default class SseNavigatorToolbar extends React.Component {
                     ))}
                 </div>
 
-                <SseNavigatorMenu history={this.props.history}/>
+                {/* <SseNavigatorMenu history={this.props.history}/> */}
             </Toolbar>
         );
     }
 }
-

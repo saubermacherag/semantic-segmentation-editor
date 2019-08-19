@@ -11,19 +11,34 @@ export default class SseLayers extends React.Component {
         this.state = {};
 
         this.state.layers = [
+            {label: "Hidden", index: 1, visible: false},
+           {label: "Labels", index: 0, visible: true}
+        ];
+/*
+        this.state.layers = [
             {label: "Foreground", index: 2, visible: true},
             {label: "Middle ground", index: 1, visible: true},
             {label: "Background", index: 0, visible: true}
         ];
+*/
         this.state.selected = 0;
 
     };
 
     componentDidMount() {
         this.onMsg("sse-image-loaded", () => {
-            this.state.layers.forEach(s => s.visible = true);
+            // this.state.layers.forEach(s => s.visible = true);
+            this.state.layers.forEach(function(s)
+            {
+                if(s.label != "Hidden")
+                    s.visible = true
+                else
+                    s.visible = false
+            });
+
             this.state.selected = 0;
             this.setState(this.state);
+            this.sendMsg("layer-hide", {index: 1});
         });
 
         this.onMsg("sse-polygon-select", (arg) => {
