@@ -35,6 +35,7 @@ export default class SseLayers extends React.Component {
                 else
                     s.visible = false
             });
+
             this.state.selected = 0;
             this.setState(this.state);
             this.sendMsg("layer-hide", {index: 1});

@@ -26,8 +26,8 @@ export default class SseNavigatorToolbar extends React.Component {
             let bd = du.pathname.replace(/\/browse\/.*\/.*\//, "").split("%2F");
 
             //let res = [{name: "Home", browseUrl: "/browse/0/20/"}];
-            //let res = [{name: "Home", browseUrl: "/browse/0/20/data"}];
             let res = [];
+
             let data;
 
             bd.forEach(itm => {
