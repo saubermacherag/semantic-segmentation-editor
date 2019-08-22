@@ -49,7 +49,7 @@ const init = ()=> {
         if (config.configuration && config.configuration["images-folder"] != "") {
             configurationFile.imagesFolder = config.configuration["images-folder"].replace(/\/$/, "");
         }else{
-            configurationFile.imagesFolder = join(os.homedir(), "sse-images");
+            configurationFile.imagesFolder = process.env.LABELTOOL_USER_FOLDER;
         }
 
         if (!existsSync(configurationFile.imagesFolder)){

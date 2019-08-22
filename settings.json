@@ -1,6 +1,6 @@
 {
   "configuration": {
-    "images-folder": "/home/node/app/input_img/",
+    "images-folder": "",
     "internal-folder": "/home/node/app/output_img/",
     "default_opacity": 0.5
   },
