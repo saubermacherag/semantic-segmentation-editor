@@ -159,7 +159,7 @@ export default class SsePolygonTool extends SseTool {
 
             this.editingPath.add(point);
 
-            this.editor.updatePathFollowingInfos(this.editingPath);
+            // this.editor.updatePathFollowingInfos(this.editingPath); // avoid freezing due to overlapping polygon bug, see https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor/issues/77
         } else {
             // First point of the polygon
             this.editingFeature = {classIndex: this.editor.activeClassIndex, polygon: []};
