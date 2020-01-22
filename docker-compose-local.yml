@@ -1,0 +1,24 @@
+version: '3.2'
+
+services:
+
+  labeltool-local:
+    build:
+      context: .
+      dockerfile: Dockerfile_local
+    restart: always
+
+    volumes:
+      - ./.docker/input_img:/home/node/app/input_img/
+      - ./.docker/output_img:/home/node/app/output_img/
+      - ./.docker/labelimages:/labelimages/
+    ports:
+      - "3000:3000"
+      # - "27000:27017"
+    env_file:
+      - .env
+    environment:
+      # make sure to add the user admin with password whyN0C4sh
+      - MONGO_URL=mongodb://admin:whyN0C4sh@labeltool-db-local:27000/labeltool-local?authSource=admin
+    extra_hosts:
+      - "labeltool-db-local:172.17.0.1" # docker0 entry in ifconfig/ip addr (`ip addr | grep docker`)

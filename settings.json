@@ -25,7 +25,7 @@
       {"label": "PlasticOther", "color": "#FF8080"},
       {"label": "GarbageBagTransp", "color": "#999966"},
       {"label": "GarbageBagOrganic", "color": "#88CC00"},
-      {"label": "ElectronicDevices", "color": "#995500"}
+      {"label": "Miscellaneous", "color": "#995500"}
     ]
     }
   ]
