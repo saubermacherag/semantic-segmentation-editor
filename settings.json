@@ -8,24 +8,26 @@
     {
       "name": "Saubermacher", "objects": [
       {"label": "Background", "color": "#000000"},
-      {"label": "DO_NOT_USE", "color": "#FF0000"},
-      {"label": "Glass", "color": "#0000FF"},
-      {"label": "Battery", "color": "#00FF00"},
-      {"label": "Paper", "color": "#FF0080"},
-      {"label": "Metal", "color": "#800080"},
+      {"label": "DO_NOT_USE", "color": "#FF5000"},
+      {"label": "Glass", "color": "#008454"},
+      {"label": "Battery", "color": "#FF0080"},
+      {"label": "Paper", "color": "#D1232A"},
+      {"label": "Metal", "color": "#253F8E"},
       {"label": "Hazardous Substances", "color": "#FF00FF"},
       {"label": "Spraycan", "color": "#6464FF"},
-      {"label": "Organic", "color": "#227711"},
+      {"label": "Organic", "color": "#875930"},
       {"label": "Residual", "color": "#646464"},
       {"label": "IgnoreMask", "color": "#DCDCDC"},
-      {"label": "GarbageBagOther", "color": "#FF5000"},
-      {"label": "GarbageBagYellow", "color": "#F0E600"},
+      {"label": "GarbageBagOther", "color": "#F8CBAD"},
+      {"label": "GarbageBagYellow", "color": "#FFE699"},
       {"label": "PET", "color": "#00CC99"},
-      {"label": "BlownBottle", "color": "#FFFF99"},
-      {"label": "PlasticOther", "color": "#FF8080"},
-      {"label": "GarbageBagTransp", "color": "#999966"},
-      {"label": "GarbageBagOrganic", "color": "#88CC00"},
-      {"label": "Miscellaneous", "color": "#995500"}
+      {"label": "BlownBottle", "color": "#9BC2E6"},
+      {"label": "PlasticOther", "color": "#FFF101"},
+      {"label": "GarbageBagTransp", "color": "#C9C9C9"},
+      {"label": "GarbageBagOrganic", "color": "#C6E0B4"},
+      {"label": "Mixed", "color": "#830057"},
+      {"label": "PaperBag", "color": "#BE6E28"},
+      {"label": "Newspaper", "color": "#961414"}
     ]
     }
   ]
